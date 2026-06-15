@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Simples</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>Lista de Tarefas</h2>
+            <div class = "search-bar">
+            <input type="text" id="barra-pesquisa" placeholder="Pesquisar tarefas..." onkeyup="pesquisarTarefas()">
+            <button id="botaoFiltro" onclick="mostrarTodasTarefas()">Todas</button>
+            <button id="botaoFiltro" onclick="mostrarTarefasFeitas()">Feitas</button>
+            <button id="botaoFiltro" onclick="mostrarTarefasAtivas()">Ativas</button>
+
+            </div>
+            <div class="row">
+                <input type="text" id="coloca-tarefa" placeholder="Digite sua tarefa aqui...">
+                <button onclick="adicionarTarefa()">Add</button>
+            </div>
+            <ul id="lista-tarefas"></ul>
+        </div>
+    </div>
+</body>
+</html>
