@@ -1,3 +1,7 @@
+//script.js
+
+
+console.log("hello world");
 const inputTarefa = document.getElementById('coloca-tarefa');
 const listaTarefas = document.getElementById('lista-tarefas');
 
