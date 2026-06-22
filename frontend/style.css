@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  /*font-family: "Andale Mono", monospace;*/
+}
+
+.container {
+  background: #f0f0f0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  background-color: #AFEEEE;
+  /*background-color: #ffdab9;*/
+  border-radius: 10px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  max-width: 540px;
+}
+
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding-left: 20px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 80%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: #00d1c0e0;
+  /*background: #FF8C00;*/
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00b3a4;
+  /*background: #CC7000;*/
+}
+
+#lista-tarefas {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+#lista-tarefas li {
+  background: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#lista-tarefas li:hover {
+  background: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.feita {
+  color: #555;
+  text-decoration: line-through;
+  background: #d4edda !important;
+  /*background: #f8d7da !important;*/
+  opacity: 0.85;
+  font-style: italic;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+#lista-tarefas li span:hover {
+  color: #c00;
+  transform: scale(1.1);
+}
+
+hr {
+  border: none;
+  background: black;
+  margin: 5px 0;
+  height: 1px;
+}
+#barra-pesquisa {
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+#botaoFiltro {
+  width: 80px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: #4682b4;
+  /*background: #6A5ACD;*/
+  color: #fff;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
