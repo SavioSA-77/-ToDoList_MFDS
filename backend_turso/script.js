@@ -2,8 +2,9 @@ const inputTarefa = document.getElementById('coloca-tarefa');
 const listaTarefas = document.getElementById('lista-tarefas');
 const barraPesquisa = document.getElementById('barra-pesquisa');
 
-const API_URL = 'http://localhost:3000/tarefas';
+const API_URL = 'https://todo-list-mfds.onrender.com/';
 
+//console.log('Script carregado. Conectando com a API em:', API_URL);
 // ---------- Funções de API ----------
 async function carregarTarefas() {
   try {
